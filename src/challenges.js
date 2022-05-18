@@ -1,11 +1,15 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui123
+function compareTrue(value1, value2) {
+  if (value1 && value2 === true) {
+    return true;
+  }
+  return false;
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let areaTriang = (base * height) / 2;
+  return areaTriang;
 }
 
 // Desafio 3
