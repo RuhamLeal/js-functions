@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue() {
-  // seu código aqui11
+  // seu código aqui123
 }
 
 // Desafio 2
