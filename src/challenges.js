@@ -15,15 +15,18 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(palavraComposta) {
   const splitstring = palavraComposta.split(' ');
-  for (let index = 0; index < splitstring.lenght; index += 1) {
+  for (let index = 0; index < splitstring.length; index += 1) {
     palavraComposta = splitstring[index];
   }
   return splitstring;
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(lastFirstItem) {
+  let firstItem = lastFirstItem[0];
+  let lastItem = lastFirstItem[lastFirstItem.length - 1];
+  let concatItem = lastItem.concat(', ', firstItem);
+  return concatItem;
 }
 
 // Desafio 5
