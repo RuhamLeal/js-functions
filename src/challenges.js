@@ -75,9 +75,26 @@ function catAndMouse(mouse, cat1, cat2) {
 
 }
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+// eslint-disable-next-line complexity
+function fizzBuzz(numFizzBuzz) {
+  let howManyFizzBuzz = [];
+  for (let index = 0; index < numFizzBuzz.length; index += 1) {
+    if (numFizzBuzz[index] % 3 === 0 && numFizzBuzz[index] % 5 === 0) {
+      howManyFizzBuzz.push('fizzBuzz');
+    // eslint-disable-next-line sonarjs/no-duplicated-branches
+    } else if (numFizzBuzz[index] % 3 === 0) {
+      howManyFizzBuzz.push('fizz');
+    // eslint-disable-next-line sonarjs/no-duplicated-branches
+    } else if (numFizzBuzz[index] % 5 === 0) {
+      howManyFizzBuzz.push('buzz');
+    } else {
+      howManyFizzBuzz.push('bug!');
+    }
+  }
+  return howManyFizzBuzz;
 }
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
