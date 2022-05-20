@@ -94,14 +94,43 @@ function fizzBuzz(numFizzBuzz) {
   return howManyFizzBuzz;
 }
 
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+// eslint-disable-next-line complexity
+function encode(fraseEncode) {
+  let fraseEncodeSplit = fraseEncode.split('');
+  for (let index = 0; index < fraseEncodeSplit.length; index += 1) {
+    if (fraseEncodeSplit[index] === 'a') {
+      fraseEncodeSplit[index] = '1';
+    } else if (fraseEncodeSplit[index] === 'e') {
+      fraseEncodeSplit[index] = '2';
+    } else if (fraseEncodeSplit[index] === 'i') {
+      fraseEncodeSplit[index] = '3';
+    } else if (fraseEncodeSplit[index] === 'o') {
+      fraseEncodeSplit[index] = '4';
+    } else if (fraseEncodeSplit[index] === 'u') {
+      fraseEncodeSplit[index] = '5';
+    }
+  }
+  return fraseEncodeSplit.join('');
 }
-function decode() {
-  // seu código aqui
+
+// eslint-disable-next-line complexity
+function decode(fraseDecode) {
+  let fraseDecodeSplit = fraseDecode.split('');
+  for (let index = 0; index < fraseDecodeSplit.length; index += 1) {
+    if (fraseDecodeSplit[index] === '1') {
+      fraseDecodeSplit[index] = 'a';
+    } else if (fraseDecodeSplit[index] === '2') {
+      fraseDecodeSplit[index] = 'e';
+    } else if (fraseDecodeSplit[index] === '3') {
+      fraseDecodeSplit[index] = 'i';
+    } else if (fraseDecodeSplit[index] === '4') {
+      fraseDecodeSplit[index] = 'o';
+    } else if (fraseDecodeSplit[index] === '5') {
+      fraseDecodeSplit[index] = 'u';
+    }
+  }
+  return fraseDecodeSplit.join('');
 }
 
 // Desafio 10
