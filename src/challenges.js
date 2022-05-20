@@ -151,8 +151,6 @@ function techList(techs, namePerson) {
   return listTechsAndName;
 }
 
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
-
 module.exports = {
   calcArea,
   catAndMouse,
