@@ -134,9 +134,24 @@ function decode(fraseDecode) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(techs, namePerson) {
+  let listTechsAndName = [];
+  let ObTechsAndName;
+  let techsSort = techs.sort();
+  if (techs.length === 0) {
+    return 'Vazio!';
+  }
+  for (let index = 0; index < techsSort.length; index += 1) {
+    ObTechsAndName = {
+      tech: techsSort[index],
+      name: namePerson,
+    };
+    listTechsAndName.push(ObTechsAndName);
+  }
+  return listTechsAndName;
 }
+
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
