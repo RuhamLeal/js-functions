@@ -72,7 +72,6 @@ function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(distanceCat2) < Math.abs(distanceCat1)) {
     return 'cat2';
   }
-
 }
 // Desafio 8
 // eslint-disable-next-line complexity
@@ -150,17 +149,3 @@ function techList(techs, namePerson) {
   }
   return listTechsAndName;
 }
-
-module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
-  techList,
-};
