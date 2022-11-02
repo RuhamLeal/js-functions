@@ -13,9 +13,12 @@ One of the first projects I did starting with javascript, there are some @trybe 
 To acess the code, just need to clone the repository:
 
 ```
+
 git clone https://github.com/RuhamLeal/js-functions.git
 cd js-functions
-´´´
+
+```
+
 
 ### More Info
 
